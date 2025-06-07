@@ -1,4 +1,6 @@
 # Fractional-Queues
 The files presented are codes used in analysis for the paper "Queuing models with Mittag-Leffler inter-event times" (See the link https://doi.org/10.1007/s13540-023-00161-4). The code deals with different models for a single server queue with first-in-first-out discipline where the service/arrival times are distributed according to Mittag-Leffler distributions, which are modelled using the "MittagLeffleR" package in R (See the link https://strakaps.github.io/MittagLeffleR/index.html).
 
-The File "GG1.R" is used in Model 3 of the paper, where the service times and arrival times are given by separate sequences of i.i.d Mittag-Leffler random variables. The code provides a direct simulation of the queue, and at the end the queue length is plotted as a function of time. Other variables of interest 
+The File "GG1.R" is used in Model 3 of the paper, where the service times and arrival times are given by separate sequences of i.i.d Mittag-Leffler random variables. The code provides a direct simulation of the queue, and at the end the queue length is plotted as a function of time. 
+
+The file "InverseSub.R" is used to plot the trajectory of the inverse stable subordinator with respect to time. 
