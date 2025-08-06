@@ -3,7 +3,7 @@
 # of inverse subordinators. We assume that alpha_1 = alpha_2 = alpha for our two fractional Poisson Processes in this case, with arrival "rates" 
 # lambda and departures "rates" mu
 
-set.seed(1) 
+set.seed(1) # Used for debugging purposes
 
 t_step = 0.01 #time partition size
 x_step = 0.1 # space partition size
@@ -134,3 +134,4 @@ while (k < lim_final + 1){
 # before, we have to use the spatial coordinates from before as the time coordinates here 
 
 plot(X[0:lim_final], unlist(Q), type="l", xlab = "time", ylab = "X") 
+
