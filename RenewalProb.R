@@ -4,6 +4,7 @@
 # This code is used to numerically compute P(X_alpha > X_beta) over a two dimensional matrix of values for (alpha, beta) in (0,1).
 # This calculation is performed by directly integrating the relevant pdf and survival funciton
 ###########################################
+set.seed(1) # Used for debugging purposes
 
 n = 100 # matrix size
 nsteps = 100000 #number of steps for numerical integral
@@ -125,4 +126,5 @@ write.table(M, file="mlProbMatrix.txt", row.names=FALSE, col.names=FALSE) # retu
 # pos = get(h, 'position')
 # 
 # 
+
 # set(h, 'position', pos - 3)
